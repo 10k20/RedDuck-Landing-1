@@ -34,16 +34,16 @@ export const Footer = () => {
           </div>
           <p className='footer-parts-right-address'>© 2023. All rights reserved. <br/>Akademika Pavlova 155 Street, Kharkiv, Ukraine</p>
           <div className="footer-parts-right-socials">
-            <a href='https://jobs.dou.ua/companies/red-duck/' className="footer-parts-right-socials-icon">
+            <a href='https://jobs.dou.ua/companies/red-duck/' target="_blank" rel="noreferrer" className="footer-parts-right-socials-icon">
               <img src={DouLogo} alt="Dou" />
             </a>
-            <a href='https://www.facebook.com/profile.php?id=100076952286530' className="footer-parts-right-socials-icon">
+            <a href='https://www.facebook.com/profile.php?id=100076952286530' target="_blank" rel="noreferrer" className="footer-parts-right-socials-icon">
               <FacebookIcon />
             </a>
-            <a href='https://redduck.medium.com/' className="footer-parts-right-socials-icon">
+            <a href='https://redduck.medium.com/' target="_blank" rel="noreferrer" className="footer-parts-right-socials-icon">
               <img src={MediumLogo} alt="Dou" id='medium'/>
             </a>
-            <a href='https://www.linkedin.com/company/redduckdev/' className="footer-parts-right-socials-icon">
+            <a href='https://www.linkedin.com/company/redduckdev/' target="_blank" rel="noreferrer" className="footer-parts-right-socials-icon">
               <LinkedinIcon />
             </a>
           </div>

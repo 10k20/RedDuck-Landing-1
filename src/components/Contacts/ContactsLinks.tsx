@@ -79,7 +79,7 @@ export const ContactsLinks = () => {
               {
                 item.id === 3 ? <hr className="row"/> : ''
               }
-              <a href={item.link} key={item.id} className="contacts-links-list-item">
+              <a href={item.link} key={item.id} target="_blank" rel="noreferrer" className="contacts-links-list-item">
                 <div className="contacts-links-list-item-wrapper">
                   <img src={item.imageSrc} alt="Social link" />
                   <img src={item.imageSrcHover} alt="Social link" />

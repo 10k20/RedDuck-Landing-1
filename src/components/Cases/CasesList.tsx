@@ -191,28 +191,30 @@ export const CasesList = () => {
   ]
   return (
     <section className="cases">
-      <div className="cases-list">
-        {
-          casesListOne.map((item) => (
-            ((item.id + 1) % 3 === 0 ?
-            <>
-              <div key={item.id} className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
+      <div className="cases-list-wrapper">
+        <div className="cases-list">
+          {
+            casesListOne.map((item) => (
+              ((item.id + 1) % 3 === 0 ?
+              <>
+                <div key={item.id} className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
+                  <div className="cases-list-item-wrapper">
+                    <img src={item.imageSrc} alt={item.title} />
+                    <p>{item.title}</p>
+                  </div>
+                </div>
+                <hr key={item.id / 1000}/>
+              </>
+              :
+              <div key={item.id}  className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
                 <div className="cases-list-item-wrapper">
                   <img src={item.imageSrc} alt={item.title} />
                   <p>{item.title}</p>
                 </div>
               </div>
-              <hr key={item.id / 1000}/>
-            </>
-            :
-            <div key={item.id}  className={item.id % 3 === 0 && item.id % 2 !== 0 ? 'cases-list-item row' : 'cases-list-item'}>
-              <div className="cases-list-item-wrapper">
-                <img src={item.imageSrc} alt={item.title} />
-                <p>{item.title}</p>
-              </div>
-            </div>
-          )))
-        }
+            )))
+          }
+        </div>
       </div>
       <div className="cases-list">
         {

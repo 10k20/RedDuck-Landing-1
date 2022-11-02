@@ -31,7 +31,7 @@ export const Header = () => {
         <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/contacts">Contact us</Link></li>
         <li><Link to="/about">About us</Link></li>
-        <li className='lang-changer'>En</li>
+        {/* <li className='lang-changer'>En</li> */}
       </nav>
       <div onClick={openMenu} className={isMenuOpened ? 'header-menu-icon active' : 'header-menu-icon'}>
         <div className="rectangle"></div>

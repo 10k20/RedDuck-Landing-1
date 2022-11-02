@@ -47,7 +47,7 @@ export const References = () => {
       <div className="references-items">
         {
           referencesList.map((item) => (
-            <a href={item.link} key={item.id} className="references-items-item">
+            <a href={item.link} target="_blank" rel="noreferrer" key={item.id} className="references-items-item">
               <div className="references-items-item-wrapper">
                 <img src={item.imgSrc} alt={item.name} />
               </div>
@@ -55,7 +55,6 @@ export const References = () => {
           ))
         }
       </div>
-      <Texture textureStyles={{left: '-1000px', top: '50%', transform: 'translateY(-50%) scale(0.5)'}}/>
     </section>
   )
 }

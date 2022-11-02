@@ -2,7 +2,7 @@
   padding: 4.125rem 9.375rem 18.625rem 9.375rem;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   &-player {
     position: absolute;
@@ -38,12 +38,36 @@
     }
   }
   &-right {
+    position: relative;
+    width: 23.375rem;
+    height: 23.375rem;
+    .texture {
+      top: 50%;
+      right: 50%;
+      transform: translateX(50%) translateY(-50%);
+      &:first-of-type {
+        img {
+          transform: scale(0.5);
+        }
+      }
+      &:nth-of-type(2) {
+        img {
+          transform: scale(0.3);
+        }
+      }
+      &:last-of-type {
+        img {
+          transform: scale(0.15);
+        }
+      }
+    }
     &-button {
       width: 23.375rem;
       object-fit: contain;
       position: absolute;
-      top: 11rem;
-      right: 20rem;
+      top: 50%;
+      right: 50%;
+      transform: translateX(50%) translateY(-50%);
       cursor: pointer;
     }
   }

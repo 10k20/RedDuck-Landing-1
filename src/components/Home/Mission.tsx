@@ -13,7 +13,7 @@ import { ScrollArrow } from '../shared/ScrollArrow';
 
 export const Mission = () => {
   return (
-    <section className="mission">
+    <section className="mission" id='mission'>
       <SectionTitle size='big'>Mission</SectionTitle>
       <div className="mission-items">
         <div className="mission-items-item">
@@ -45,7 +45,6 @@ export const Mission = () => {
           </p>
         </div>
       </div>
-      <Texture textureStyles={{right: '-1000px', top: '50%', transform: 'translateY(-50%) scale(0.5)'}}/>
       <ScrollArrow />
     </section>
   )

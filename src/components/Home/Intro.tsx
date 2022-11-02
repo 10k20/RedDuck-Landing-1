@@ -27,17 +27,17 @@ export const Intro = () => {
       </div>
       <div className="intro-right">
         <img onClick={() => {setIsVideoOpened(!isVideoOpened)}} src={PlayButton} alt="Button" className='intro-right-button'/>
-        <Texture textureStyles={{right: '-20rem', top: '-30rem', transform: 'scale(0.5)'}}/>
-        <Texture textureStyles={{right: '-20rem', top: '-30rem', transform: 'scale(0.3)'}}/>
-        <Texture textureStyles={{right: '-20rem', top: '-30rem', transform: 'scale(0.15)'}}/>
+        <Texture textureStyles={{transform: 'translateX(50%) translateY(-50%)'}}/>
+        <Texture textureStyles={{transform: 'ranslateX(50%) translateY(-50%)'}}/>
+        <Texture textureStyles={{transform: 'translateX(50%) translateY(-50%)'}}/>
       </div>
       <img src={introChart} className="intro-chart" alt='intro-chart'/>
-      <div className="intro-scroll">
+      <a className="intro-scroll" href='#mission'>
         <p>scroll</p>
         <ArrowLeft />
         <ArrowLeft />
         <ScrollVertical />
-      </div>
+      </a>
     </section>
   )
 }

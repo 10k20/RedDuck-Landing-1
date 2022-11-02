@@ -203,13 +203,13 @@
   }
   .our-team {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     position: relative;
     overflow: hidden;
     &-list {
       display: flex;
       justify-content: center;
+      flex-direction: column;
       column-gap: 1.875rem;
       row-gap: 1.875rem;
       margin: 5rem 1rem 0 1rem;

@@ -23,7 +23,7 @@ export const ArticlesList = (props:any) => {
                 <div dangerouslySetInnerHTML={{__html: article.content}} className="articles-list-item-description"></div>
                 <hr/>
                 <div className="articles-list-item-date">
-                  {`${moment(article.publish).format('DD.MM.YYYY')} | ${article.author}`}
+                  {`${moment(article.created).format('DD.MM.YYYY')} | ${article.author}`}
                 </div>
               </div>
             </a>

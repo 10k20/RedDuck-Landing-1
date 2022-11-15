@@ -14,6 +14,7 @@ export const MainArticle = (props: any) => {
       div.innerHTML = props.article.content
       const img = div.querySelector('img')
       setArticleImg(img)
+      console.log(moment(1660245055000).format("DD:MM:YYYY"))
     }, [props.article.content])
     let copyLink = () => {
       let copyTextarea = document.createElement("textarea")
@@ -34,7 +35,7 @@ export const MainArticle = (props: any) => {
           {props.article.title}
         </div>
         <div className="main-article-right-desc">
-          {`${moment(props.article.publish).format('DD.MM.YYYY')} | ${props.article.author}`}
+          {`${moment(props.article.created).format('DD.MM.YYYY')} | ${props.article.author}`}
         </div>
         <div className="main-article-right-share">
           <div className="main-article-right-share-left">
